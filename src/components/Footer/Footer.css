@@ -1,0 +1,46 @@
+.footer {
+    background-color: white;
+    color: #333;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    flex: 1;
+    max-width: 200px;
+    margin: 0 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  .box a i {
+    margin-right: 10px;
+  }
+  
+  .footer-container::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
