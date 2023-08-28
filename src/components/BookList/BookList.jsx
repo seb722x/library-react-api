@@ -5,6 +5,9 @@ import Loading from "../Loader/Loader";
 import coverImg from "../../images/cover_not_found.jpg";
 import "./BookList.css";
 
+
+//https://covers.openlibrary.org/b/id/240727-S.jpg
+
 const BookList = () => {
 
 
