@@ -23,4 +23,22 @@ const SearchForm = () => {
     navigate("/book");
   };
 
+  return (
+    <div className='search-form'>
+        <div className='container'>
+            <div className='search-form-content'>
+                <form onSubmit={handleSubmit}>
+                <div className='search-form-elem'>
+                    <input type="text" className='form-control' placeholder='The Lost World ...' ref={searchText} />
+                    <button type="submit" className='search-button' onClick={handleSubmit}>  
+                    <FaSearch className='text-purple' size={32} />
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+     </div>
+  )
 }
+
+export default SearchForm
