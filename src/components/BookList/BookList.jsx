@@ -21,6 +21,24 @@ const BookList = () => {
 
   if(loading) return <Loading />;
 
+  return (
+    <section className='booklist'>
+      <div className='container'>
+        <div className='section-title'>
+          <h2>{resultTitle}</h2>
+        </div>
+        <div className='booklist-content grid'>
+          {
+            booksWithCovers.slice(0, 30).map((item, index) => {
+              return (
+                <Book key = {index} {...item} />
+              )
+            })
+          }
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default BookList
