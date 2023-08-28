@@ -44,3 +44,14 @@
     display: block;
     clear: both;
   }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .box {
+      max-width: 100%;
+      margin: 10px;
+    }
+  }
