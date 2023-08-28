@@ -9,7 +9,7 @@ test('renders navbar with brand and menu', () => {
     <Router>
       <Navbar />
     </Router>
-  );
+  );//
   
   // Test for the presence of brand text
   expect(getByText('Open_Library')).toBeInTheDocument();
